@@ -80,21 +80,34 @@ graph = {'A': set(['B', 'F', 'E']),
          'O': set(['K']), 
          'P': set(['L'])}
 
-t = 0
-v = dfs(graph, 'A')
-u = dfs(graph, 'H')
-w = bfs(graph, "A")
-x = bfs(graph, "H")
-#print(v)
-#print(u)
-#print(w)
-#print(x)
+# =============================================================================
+# v = dfs(graph, 'A')
+# u = dfs(graph, 'H')
+# w = bfs(graph, "A")
+# z = bfs(graph, "H")
+# print(v)
+# print(u)
+# print(w)
+# print(x)
+# =============================================================================
 
-a = bfs_path(graph, "D", "N")
-b = dfs_path(graph, "D", "N")
-c = dfs_path(graph, "A", "L")
-d = bfs_path(graph, "A", "L")
-print(a)
-print(b)
-print(c)
-print(d)
+# =============================================================================
+# a = bfs_path(graph, "D", "N")
+# b = dfs_path(graph, "D", "N")
+# c = dfs_path(graph, "A", "B")
+# d = bfs_path(graph, "A", "B")
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# =============================================================================
+
+s = dfs_path(graph, "A", "B")
+t = dfs_path(graph, "A", "B")
+x = bfs_path(graph, "A", "B")
+y = bfs_path(graph, "A", "B")
+print(s)
+print(t)
+print(x)
+print(y)
+
